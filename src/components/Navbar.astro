@@ -7,6 +7,7 @@ const currentPath = Astro.url.pathname.split("/").pop();
 
 <Layout>
   <header class="px-20 py-4">
+    <p>{currentPath}</p>
     <nav class="flex justify-between items-center text-gray-400 pb-3 bg-white">
       <div>
         <ul class="flex items-center gap-10">
