@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 150ms linear;
+}
+a {
+  transition: all 100ms linear;
+}
+a:hover {
+  color: black;
+}

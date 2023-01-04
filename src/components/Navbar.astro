@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const LogoLink = "https://nestnepal.com/images/others/Nest-Nepal-Logo.png";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<Layout>
+  <header class="px-20 py-4">
+    <nav class="flex justify-between items-center text-gray-400 pb-3 bg-white">
+      <div>
+        <ul class="flex items-center gap-10">
+          <li>
+            <a href="/"
+              ><img src={LogoLink} alt="NestNepal_logo" class="w-48" />
+            </a>
+          </li>
+          <li>
+            <a href="/domain" class={currentPath === "domain" ? "active" : ""}
+              >Domains</a
+            >
+          </li>
+          <li>
+            <a
+              href="/server_and_hosting"
+              class={currentPath === "server_and_hosting" ? "active" : ""}
+              >Server & Hosting</a
+            >
+          </li>
+          <li>
+            <a
+              href="/emails_and_productivity"
+              class={currentPath === "emails_and_productivity" ? "active" : ""}
+              >Emails & Productivity</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="flex items-center gap-9">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</Layout>
+<style>
+  .active {
+    color: black;
+  }
+</style>

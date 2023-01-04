@@ -1,0 +1,28 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+const DomainImage = "https://nestnepal.com/images/header/domain.webp";
+---
+
+<Layout title="Domain">
+  <Navbar />
+  <div
+    class="flex border-2 border-t-gray-200 z-10 bg-white left-0 right-0 justify-between py-5 px-28 pt-5"
+  >
+    <div class="flex gap-2 flex-col mt-10">
+      <p class="font-black">Domains</p>
+      <a href="#">Search Your Domain</a>
+      <a href="#">Transfer Your Domain</a>
+      <a href="#">WHOIS Lookup</a>
+    </div>
+    <div class="flex flex-col gap-3">
+      <img class="w-72 mt-5" src={DomainImage} alt="Domain" />
+      <a href="#" class="underline">Get Started With Your Own .Co {"->"}</a>
+    </div>
+  </div>
+</Layout>
+<style>
+  a:hover {
+    text-decoration-line: underline;
+  }
+</style>

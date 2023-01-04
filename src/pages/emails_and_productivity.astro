@@ -1,0 +1,32 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+const google = "https://nestnepal.com/images/header/email.jpg";
+---
+
+<Layout title="server-and-hosting">
+  <Navbar />
+  <div
+    class="flex border-2 border-t-gray-200 z-10 bg-white left-0 right-0 justify-between py-5 px-10 pt-10"
+  >
+    <div class="flex gap-2 flex-col mt-10">
+      <p class="font-bold">Email Solution With Productivity</p>
+      <a href="#">Google Workspace (G-Suite)</a>
+    </div>
+    <div class="flex gap-2 flex-col mt-10">
+      <p class="font-bold">Email</p>
+      <a href="#">OX Mail Suite</a>
+    </div>
+    <div>
+      <img class="w-72 mt-5" src={google} alt="Google WorkSpace" />
+      <a href="#" class="underline"
+        >Increase Your Team's Productivity <br />With Google WorkSpace{"->"}</a
+      >
+    </div>
+  </div>
+</Layout>
+<style>
+  a:hover {
+    text-decoration-line: underline;
+  }
+</style>

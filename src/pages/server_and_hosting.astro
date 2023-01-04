@@ -1,0 +1,44 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="server-and-hosting">
+  <Navbar />
+  <div
+    class="flex border-2 border-t-gray-200 z-10 bg-white left-0 right-0 justify-between py-5 px-10 pt-10"
+  >
+    <div class="flex gap-10 mt-10">
+      <div class="flex flex-col">
+        <p class="font-black mb-2">Web Hosting</p>
+        <a href="#">Web Hosting</a>
+        <a href="#">Wordpress Cloud Hosting</a>
+        <a href="#">Managed Ecommerce</a>
+        <a href="#">Hosting</a>
+      </div>
+      <div class="flex flex-col">
+        <p class="font-black mb-2">Servers</p>
+        <a href="#">Nepal Based VPS Hosting</a>
+        <a href="#">Nepal Based VPS Hosting</a>
+        <a href="#">VPS Hosting (International Datacenter)</a>
+      </div>
+      <div class="flex flex-col">
+        <p class="font-black mb-2">Resellers</p>
+        <a href="#">Reseller Hosting</a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <img
+        src="https://nestnepal.com/images/header/server-hosting.webp"
+        alt="sever_and_hosting"
+        class="w-72 mt-5"
+      />
+      <p class="underline">Get Started With Our Best Hosting Plans {"->"}</p>
+    </div>
+  </div>
+</Layout>
+<style>
+  a:hover {
+    text-decoration-line: underline;
+  }
+</style>

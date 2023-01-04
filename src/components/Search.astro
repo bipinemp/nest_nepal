@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const Prices = [
+  { type: ".com", price: "रु.1,350" },
+  { type: ".net", price: "रु.1,375" },
+  { type: ".org", price: "रु.1,047" },
+  { type: ".xyz", price: "रु.130" },
+];
+---
+
+<Layout>
+  <section
+    class="flex justify-center items-center gap-10 w-full pt-2 pb-4 px-10"
+  >
+    <div class="w-3/5 flex justify-center gap-2">
+      <input
+        type="text"
+        placeholder="Search for your next brand"
+        class="w-9/12 bg-gray-100 px-5 py-4 outline-none"
+      />
+      <button
+        class="bg-blue-600 text-white px-10 tracking-wider transition-all ease-linear hover:bg-blue-800"
+        >SEARCH</button
+      >
+    </div>
+    <div class="w-2/5 flex justify-center gap-6">
+      {
+        Prices.map((item) => (
+          <p class="flex gap-3">
+            <span class="font-semibold leading-3">{item.type}</span>
+            <span class="text-gray-400 mt-2">{item.price}</span>
+          </p>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

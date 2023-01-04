@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+const ImageLink = "https://nestnepal.com/images/home/heroImg.png";
+---
+
+<Layout>
+  <section class="relative flex justify-between bg-blue-100 pt-10 px-14">
+    <div class="w-2/6 flex flex-col gap-5">
+      <div>
+        <p class="font-bold tracking-wide text-gray-600">
+          SHARED CLOUD HOSTING
+        </p>
+      </div>
+      <div>
+        <h1 class="font-black font-serifpro text-5xl">
+          Shared Hosting <br /> has got all the <br /> Power you need.
+        </h1>
+      </div>
+      <div class="flex flex-col font-serifpro text-2xl">
+        <span class="font-semibold text-xl text-gray-800">As Low as</span>
+        <span class="font-black text-3xl">Rs. 116/mo</span>
+      </div>
+      <div>
+        <button
+          class="bg-blue-600 text-white px-8 py-4 tracking-wider transition-all ease-linear hover:bg-blue-800"
+          >Host Your Site</button
+        >
+      </div>
+      <div class="text-gray-700">
+        <li>Unlimited Website & Storage</li>
+        <li>Free SSL Certificate Included</li>
+        <li>Free SSL Certificate Included</li>
+        <li>1-Click App Installer</li>
+      </div>
+    </div>
+
+    <div>
+      <img
+        class="w-72 object-contain mt-24"
+        src={ImageLink}
+        alt="Banner_picture"
+      />
+    </div>
+
+    <div class="w-2/6 flex flex-col gap-5">
+      <div>
+        <p class="font-bold tracking-wide text-gray-600">WORDPRESS HOSTING</p>
+      </div>
+      <div>
+        <h1 class="font-black font-serifpro text-5xl">
+          Hosting built to <br /> boost WordPress <br /> websites.
+        </h1>
+      </div>
+      <div class="flex flex-col font-serifpro text-2xl">
+        <span class="font-semibold text-xl text-gray-800">As Low as</span>
+        <span class="font-black text-3xl">Rs. 209/mo</span>
+      </div>
+      <div>
+        <button
+          class="bg-blue-600 text-white px-8 py-4 tracking-wider transition-all ease-linear hover:bg-blue-800"
+          >Host Your Site</button
+        >
+      </div>
+      <div class="text-gray-700">
+        <li>250% Faster for WordPress</li>
+        <li>Cloud Based nvme-SSD</li>
+        <li>LiteSpeed Cache for WordPress</li>
+        <li>Free (.COM/.NET/.ORG) Domain</li>
+      </div>
+    </div>
+  </section>
+</Layout>

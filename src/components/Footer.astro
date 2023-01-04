@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+const LogoLink = "https://nestnepal.com/images/others/Nest-Nepal-Logo.png";
+const fb = "https://www.svgrepo.com/show/448224/facebook.svg";
+const twitter = "https://www.svgrepo.com/show/448252/twitter.svg";
+const insta = "https://www.svgrepo.com/show/349410/instagram.svg";
+---
+
+<Layout>
+  <footer class="mt-9">
+    <div>
+      <p class="text-center py-10 bg-blue-800 text-white text-2xl">
+        Need help? WhatsApp our award-winning support team at +977-9881357587
+      </p>
+    </div>
+
+    <div class="flex justify-center gap-28 pt-10 pb-5 bg-blue-500 text-white">
+      <div class="flex flex-col gap-3">
+        <a href="#" class="font-bold text-xl tracking-wide mb-3">Products</a>
+        <a href="#">Web Hosting In Nepal</a>
+        <a href="#">Wordpress Hosting In Nepal</a>
+        <a href="#">Ecommerce Hosting In Nepal</a>
+        <a href="#">Reseller Hosting In Nepal</a>
+        <a href="#">VPS Hosting (International)</a>
+        <a href="#">VPS Hosting (Nepal)</a>
+        <a href="#">Google WorkSpace (G-Suite)</a>
+        <a href="#">In Nepal</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <a href="#" class="font-bold text-xl tracking-wide mb-3">Company</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+        <a href="#">Support</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms Of Service</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <a href="#" class="font-bold text-xl tracking-wide mb-3">Support</a>
+        <a href="#">Knowledge Base</a>
+        <a href="#">Blog</a>
+        <a href="#">Report Abuse</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <a href="#" class="font-bold text-xl tracking-wide mb-3">Programs</a>
+        <a href="#">Partnership</a>
+        <a href="#">Affiliates</a>
+        <a href="#">Careers</a>
+        <a href="#">Internships</a>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center gap-28 py-5 bg-blue-100">
+      <div class="flex gap-4">
+        <div>
+          <img class="object-cover w-40" src={LogoLink} alt="NestNepal_Logo" />
+        </div>
+        <p class="text-xs mt-1">
+          © 2020 – 2022 Nest Nepal Business Solutions Pvt. Ltd. All Rights
+          Reserved.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="https://www.facebook.com/nestnepalofficial" target="_blank">
+          <img src={fb} alt="facebook_logo" width="30px" />
+        </a>
+        <a href="https://twitter.com/nestnepal" target="_blank">
+          <img src={twitter} alt="twitter_logo" width="30px" />
+        </a>
+        <a href="https://www.instagram.com/nestnepalofficial/" target="_blank">
+          <img src={insta} alt="Instagram_logo" width="25px" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</Layout>
