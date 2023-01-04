@@ -2,7 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 
 const LogoLink = "https://nestnepal.com/images/others/Nest-Nepal-Logo.png";
-const currentPath = Astro.url.pathname.split("/").pop();
+const pathname = Astro.url.pathname;
+const currentPath = pathname.slice(1);
 ---
 
 <Layout>
